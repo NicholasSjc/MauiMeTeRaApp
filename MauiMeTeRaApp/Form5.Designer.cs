@@ -32,6 +32,7 @@
             LblTtl = new Label();
             EngBtn = new Button();
             MaoriBtn = new Button();
+            ExitBtn = new Button();
             SuspendLayout();
             // 
             // PikLngLbl
@@ -78,12 +79,25 @@
             MaoriBtn.UseVisualStyleBackColor = true;
             MaoriBtn.Click += MaoriBtn_Click;
             // 
+            // ExitBtn
+            // 
+            ExitBtn.BackColor = Color.IndianRed;
+            ExitBtn.FlatStyle = FlatStyle.Flat;
+            ExitBtn.Location = new Point(1112, 907);
+            ExitBtn.Name = "ExitBtn";
+            ExitBtn.Size = new Size(150, 50);
+            ExitBtn.TabIndex = 35;
+            ExitBtn.Text = "Exit";
+            ExitBtn.UseVisualStyleBackColor = false;
+            ExitBtn.Click += ExitBtn_Click;
+            // 
             // LngeScreen
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(237, 153, 45);
             ClientSize = new Size(1262, 953);
+            Controls.Add(ExitBtn);
             Controls.Add(MaoriBtn);
             Controls.Add(EngBtn);
             Controls.Add(LblTtl);
@@ -100,5 +114,6 @@
         private Label LblTtl;
         private Button EngBtn;
         private Button MaoriBtn;
+        private Button ExitBtn;
     }
 }

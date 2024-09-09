@@ -19,16 +19,23 @@ namespace MauiMeTeRaApp
 
         private void EngBtn_Click(object sender, EventArgs e)
         {
-            Form MmtrGameScreenEng = new MmtrGameScreenEng();
-            MmtrGameScreenEng.Show();
             this.Hide();
+            Form MmtrGameScreenEng = new MmtrGameScreenEng();
+            MmtrGameScreenEng.Closed += (s, args) => this.Close();
+            MmtrGameScreenEng.Show();
         }
 
         private void MaoriBtn_Click(object sender, EventArgs e)
         {
-            Form MMmtrGameScreenMaori = new MmtrGameScreenMaori();
-            MMmtrGameScreenMaori.Show();
             this.Hide();
+            Form MmtrGameScreenMaori = new MmtrGameScreenMaori();
+            MmtrGameScreenMaori.Closed += (s, args) => this.Close();
+            MmtrGameScreenMaori.Show();
+        }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

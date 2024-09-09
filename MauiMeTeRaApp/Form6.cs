@@ -19,9 +19,10 @@ namespace MauiMeTeRaApp
 
         private void ExitBtn_Click(object sender, EventArgs e)
         {
-            Form LngeScreen = new LngeScreen();
-            LngeScreen.Show();
             this.Hide();
+            Form LngeScreen = new LngeScreen();
+            LngeScreen.Closed += (s, args) => this.Close();
+            LngeScreen.Show();
         }
     }
 }

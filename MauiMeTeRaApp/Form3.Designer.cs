@@ -60,14 +60,14 @@
             GmeScrPic = new PictureBox();
             GamSunPic = new PictureBox();
             pictureBox1 = new PictureBox();
-            richTextBox8 = new RichTextBox();
-            richTextBox7 = new RichTextBox();
-            richTextBox6 = new RichTextBox();
-            richTextBox5 = new RichTextBox();
-            richTextBox4 = new RichTextBox();
-            richTextBox3 = new RichTextBox();
-            richTextBox2 = new RichTextBox();
-            richTextBox1 = new RichTextBox();
+            GusWrdTeReoRtb2 = new RichTextBox();
+            GusWrdTeReoRtb3 = new RichTextBox();
+            GusWrdTeReoRtb4 = new RichTextBox();
+            GusWrdTeReoRtb5 = new RichTextBox();
+            GusWrdTeReoRtb6 = new RichTextBox();
+            GusWrdTeReoRtb7 = new RichTextBox();
+            GusWrdTeReoRtb8 = new RichTextBox();
+            GusWrdTeReoRtb1 = new RichTextBox();
             richTextBox9 = new RichTextBox();
             ((System.ComponentModel.ISupportInitialize)PicLossScreen).BeginInit();
             ((System.ComponentModel.ISupportInitialize)GmeScrPic).BeginInit();
@@ -96,7 +96,9 @@
             // MistkBox
             // 
             MistkBox.Location = new Point(1014, 198);
+            MistkBox.Margin = new Padding(20);
             MistkBox.Name = "MistkBox";
+            MistkBox.ReadOnly = true;
             MistkBox.Size = new Size(230, 500);
             MistkBox.TabIndex = 38;
             MistkBox.Text = "";
@@ -110,6 +112,7 @@
             NwGamBtn.TabIndex = 37;
             NwGamBtn.Text = "New Game";
             NwGamBtn.UseVisualStyleBackColor = true;
+            NwGamBtn.Click += NwGamBtn_Click;
             // 
             // LangBtn
             // 
@@ -144,212 +147,275 @@
             // 
             // abtn
             // 
+            abtn.BackColor = Color.White;
+            abtn.FlatStyle = FlatStyle.Flat;
             abtn.Font = new Font("Segoe UI", 13.8F);
             abtn.Location = new Point(59, 736);
             abtn.Name = "abtn";
             abtn.Size = new Size(63, 60);
             abtn.TabIndex = 42;
             abtn.Text = "a";
-            abtn.UseVisualStyleBackColor = true;
+            abtn.UseVisualStyleBackColor = false;
+            abtn.Click += TeReoBtn;
             // 
             // eBtn
             // 
+            eBtn.BackColor = Color.White;
+            eBtn.FlatStyle = FlatStyle.Flat;
             eBtn.Font = new Font("Segoe UI", 13.8F);
             eBtn.Location = new Point(128, 736);
             eBtn.Name = "eBtn";
             eBtn.Size = new Size(63, 60);
             eBtn.TabIndex = 43;
             eBtn.Text = "e";
-            eBtn.UseVisualStyleBackColor = true;
+            eBtn.UseVisualStyleBackColor = false;
+            eBtn.Click += TeReoBtn;
             // 
             // hBtn
             // 
+            hBtn.BackColor = Color.White;
+            hBtn.FlatStyle = FlatStyle.Flat;
             hBtn.Font = new Font("Segoe UI", 13.8F);
             hBtn.Location = new Point(197, 736);
             hBtn.Name = "hBtn";
             hBtn.Size = new Size(63, 60);
             hBtn.TabIndex = 44;
             hBtn.Text = "h";
-            hBtn.UseVisualStyleBackColor = true;
+            hBtn.UseVisualStyleBackColor = false;
+            hBtn.Click += TeReoBtn;
             // 
             // iBtn
             // 
+            iBtn.BackColor = Color.White;
+            iBtn.FlatStyle = FlatStyle.Flat;
             iBtn.Font = new Font("Segoe UI", 13.8F);
             iBtn.Location = new Point(266, 736);
             iBtn.Name = "iBtn";
             iBtn.Size = new Size(63, 60);
             iBtn.TabIndex = 45;
             iBtn.Text = "i";
-            iBtn.UseVisualStyleBackColor = true;
+            iBtn.UseVisualStyleBackColor = false;
+            iBtn.Click += TeReoBtn;
             // 
             // kBtn
             // 
+            kBtn.BackColor = Color.White;
+            kBtn.FlatStyle = FlatStyle.Flat;
             kBtn.Font = new Font("Segoe UI", 13.8F);
             kBtn.Location = new Point(335, 736);
             kBtn.Name = "kBtn";
             kBtn.Size = new Size(63, 60);
             kBtn.TabIndex = 46;
             kBtn.Text = "k";
-            kBtn.UseVisualStyleBackColor = true;
+            kBtn.UseVisualStyleBackColor = false;
+            kBtn.Click += TeReoBtn;
             // 
             // mBtn
             // 
+            mBtn.BackColor = Color.White;
+            mBtn.FlatStyle = FlatStyle.Flat;
             mBtn.Font = new Font("Segoe UI", 13.8F);
             mBtn.Location = new Point(404, 736);
             mBtn.Name = "mBtn";
             mBtn.Size = new Size(63, 60);
             mBtn.TabIndex = 47;
             mBtn.Text = "m";
-            mBtn.UseVisualStyleBackColor = true;
+            mBtn.UseVisualStyleBackColor = false;
+            mBtn.Click += TeReoBtn;
             // 
             // nBtn
             // 
+            nBtn.BackColor = Color.White;
+            nBtn.FlatStyle = FlatStyle.Flat;
             nBtn.Font = new Font("Segoe UI", 13.8F);
             nBtn.Location = new Point(91, 802);
             nBtn.Name = "nBtn";
             nBtn.Size = new Size(63, 60);
             nBtn.TabIndex = 48;
             nBtn.Text = "n";
-            nBtn.UseVisualStyleBackColor = true;
+            nBtn.UseVisualStyleBackColor = false;
+            nBtn.Click += TeReoBtn;
             // 
             // ngBtn
             // 
+            ngBtn.BackColor = Color.White;
+            ngBtn.FlatStyle = FlatStyle.Flat;
             ngBtn.Font = new Font("Segoe UI", 13.8F);
             ngBtn.Location = new Point(255, 869);
             ngBtn.Name = "ngBtn";
             ngBtn.Size = new Size(63, 60);
             ngBtn.TabIndex = 49;
             ngBtn.Text = "ng";
-            ngBtn.UseVisualStyleBackColor = true;
+            ngBtn.UseVisualStyleBackColor = false;
+            ngBtn.Click += TeReoBtn;
             // 
             // oBtn
             // 
+            oBtn.BackColor = Color.White;
+            oBtn.FlatStyle = FlatStyle.Flat;
             oBtn.Font = new Font("Segoe UI", 13.8F);
             oBtn.Location = new Point(229, 802);
             oBtn.Name = "oBtn";
             oBtn.Size = new Size(63, 60);
             oBtn.TabIndex = 50;
             oBtn.Text = "o";
-            oBtn.UseVisualStyleBackColor = true;
+            oBtn.UseVisualStyleBackColor = false;
+            oBtn.Click += TeReoBtn;
             // 
             // pbtn
             // 
+            pbtn.BackColor = Color.White;
+            pbtn.FlatStyle = FlatStyle.Flat;
             pbtn.Font = new Font("Segoe UI", 13.8F);
             pbtn.Location = new Point(298, 802);
             pbtn.Name = "pbtn";
             pbtn.Size = new Size(63, 60);
             pbtn.TabIndex = 51;
             pbtn.Text = "p";
-            pbtn.UseVisualStyleBackColor = true;
+            pbtn.UseVisualStyleBackColor = false;
+            pbtn.Click += TeReoBtn;
             // 
             // rBtn
             // 
+            rBtn.BackColor = Color.White;
+            rBtn.FlatStyle = FlatStyle.Flat;
             rBtn.Font = new Font("Segoe UI", 13.8F);
             rBtn.Location = new Point(367, 802);
             rBtn.Name = "rBtn";
             rBtn.Size = new Size(63, 60);
             rBtn.TabIndex = 52;
             rBtn.Text = "r";
-            rBtn.UseVisualStyleBackColor = true;
+            rBtn.UseVisualStyleBackColor = false;
+            rBtn.Click += TeReoBtn;
             // 
             // tBtn
             // 
+            tBtn.BackColor = Color.White;
+            tBtn.FlatStyle = FlatStyle.Flat;
             tBtn.Font = new Font("Segoe UI", 13.8F);
             tBtn.Location = new Point(117, 868);
             tBtn.Name = "tBtn";
             tBtn.Size = new Size(63, 60);
             tBtn.TabIndex = 53;
             tBtn.Text = "t";
-            tBtn.UseVisualStyleBackColor = true;
+            tBtn.UseVisualStyleBackColor = false;
+            tBtn.Click += TeReoBtn;
             // 
             // uBtn
             // 
+            uBtn.BackColor = Color.White;
+            uBtn.FlatStyle = FlatStyle.Flat;
             uBtn.Font = new Font("Segoe UI", 13.8F);
             uBtn.Location = new Point(186, 868);
             uBtn.Name = "uBtn";
             uBtn.Size = new Size(63, 60);
             uBtn.TabIndex = 54;
             uBtn.Text = "u";
-            uBtn.UseVisualStyleBackColor = true;
+            uBtn.UseVisualStyleBackColor = false;
+            uBtn.Click += TeReoBtn;
             // 
             // wBtn
             // 
+            wBtn.BackColor = Color.White;
+            wBtn.FlatStyle = FlatStyle.Flat;
             wBtn.Font = new Font("Segoe UI", 13.8F);
             wBtn.Location = new Point(160, 802);
             wBtn.Name = "wBtn";
             wBtn.Size = new Size(63, 60);
             wBtn.TabIndex = 55;
             wBtn.Text = "w";
-            wBtn.UseVisualStyleBackColor = true;
+            wBtn.UseVisualStyleBackColor = false;
+            wBtn.Click += TeReoBtn;
             // 
             // whBtn
             // 
+            whBtn.BackColor = Color.White;
+            whBtn.FlatStyle = FlatStyle.Flat;
             whBtn.Font = new Font("Segoe UI", 13.8F);
             whBtn.Location = new Point(324, 868);
             whBtn.Name = "whBtn";
             whBtn.Size = new Size(63, 60);
             whBtn.TabIndex = 56;
             whBtn.Text = "wh";
-            whBtn.UseVisualStyleBackColor = true;
+            whBtn.UseVisualStyleBackColor = false;
+            whBtn.Click += TeReoBtn;
             // 
             // āBtn
             // 
+            āBtn.BackColor = Color.White;
+            āBtn.FlatStyle = FlatStyle.Flat;
             āBtn.Font = new Font("Segoe UI", 13.8F);
             āBtn.Location = new Point(515, 755);
             āBtn.Name = "āBtn";
             āBtn.Size = new Size(159, 84);
             āBtn.TabIndex = 57;
             āBtn.Text = "ā";
-            āBtn.UseVisualStyleBackColor = true;
+            āBtn.UseVisualStyleBackColor = false;
+            āBtn.Click += TeReoBtn;
             // 
             // ēBtn
             // 
+            ēBtn.BackColor = Color.White;
+            ēBtn.FlatStyle = FlatStyle.Flat;
             ēBtn.Font = new Font("Segoe UI", 13.8F);
             ēBtn.Location = new Point(680, 755);
             ēBtn.Name = "ēBtn";
             ēBtn.Size = new Size(159, 84);
             ēBtn.TabIndex = 58;
             ēBtn.Text = "ē";
-            ēBtn.UseVisualStyleBackColor = true;
+            ēBtn.UseVisualStyleBackColor = false;
+            ēBtn.Click += TeReoBtn;
             // 
             // īBtn
             // 
+            īBtn.BackColor = Color.White;
+            īBtn.FlatStyle = FlatStyle.Flat;
             īBtn.Font = new Font("Segoe UI", 13.8F);
             īBtn.Location = new Point(845, 755);
             īBtn.Name = "īBtn";
             īBtn.Size = new Size(159, 84);
             īBtn.TabIndex = 59;
             īBtn.Text = "ī";
-            īBtn.UseVisualStyleBackColor = true;
+            īBtn.UseVisualStyleBackColor = false;
+            īBtn.Click += TeReoBtn;
             // 
             // ōBtn
             // 
+            ōBtn.BackColor = Color.White;
+            ōBtn.FlatStyle = FlatStyle.Flat;
             ōBtn.Font = new Font("Segoe UI", 13.8F);
             ōBtn.Location = new Point(611, 845);
             ōBtn.Name = "ōBtn";
             ōBtn.Size = new Size(159, 84);
             ōBtn.TabIndex = 60;
             ōBtn.Text = "ō";
-            ōBtn.UseVisualStyleBackColor = true;
+            ōBtn.UseVisualStyleBackColor = false;
+            ōBtn.Click += TeReoBtn;
             // 
             // ūBtn
             // 
+            ūBtn.BackColor = Color.White;
+            ūBtn.FlatStyle = FlatStyle.Flat;
             ūBtn.Font = new Font("Segoe UI", 13.8F);
             ūBtn.Location = new Point(776, 844);
             ūBtn.Name = "ūBtn";
             ūBtn.Size = new Size(159, 84);
             ūBtn.TabIndex = 61;
             ūBtn.Text = "ū";
-            ūBtn.UseVisualStyleBackColor = true;
+            ūBtn.UseVisualStyleBackColor = false;
+            ūBtn.Click += TeReoBtn;
             // 
             // ExitBtn
             // 
+            ExitBtn.BackColor = Color.IndianRed;
+            ExitBtn.FlatStyle = FlatStyle.Flat;
             ExitBtn.Location = new Point(1111, 901);
             ExitBtn.Name = "ExitBtn";
             ExitBtn.Size = new Size(150, 50);
             ExitBtn.TabIndex = 62;
             ExitBtn.Text = "Exit";
-            ExitBtn.UseVisualStyleBackColor = true;
+            ExitBtn.UseVisualStyleBackColor = false;
+            ExitBtn.Click += ExitBtn_Click;
             // 
             // GmeScrPic
             // 
@@ -380,74 +446,92 @@
             pictureBox1.TabIndex = 67;
             pictureBox1.TabStop = false;
             // 
-            // richTextBox8
+            // GusWrdTeReoRtb2
             // 
-            richTextBox8.Location = new Point(149, 102);
-            richTextBox8.Name = "richTextBox8";
-            richTextBox8.Size = new Size(100, 71);
-            richTextBox8.TabIndex = 83;
-            richTextBox8.Text = "";
+            GusWrdTeReoRtb2.Font = new Font("Segoe UI", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            GusWrdTeReoRtb2.Location = new Point(149, 102);
+            GusWrdTeReoRtb2.Name = "GusWrdTeReoRtb2";
+            GusWrdTeReoRtb2.ReadOnly = true;
+            GusWrdTeReoRtb2.Size = new Size(100, 71);
+            GusWrdTeReoRtb2.TabIndex = 83;
+            GusWrdTeReoRtb2.Text = "";
             // 
-            // richTextBox7
+            // GusWrdTeReoRtb3
             // 
-            richTextBox7.Location = new Point(266, 102);
-            richTextBox7.Name = "richTextBox7";
-            richTextBox7.Size = new Size(100, 71);
-            richTextBox7.TabIndex = 82;
-            richTextBox7.Text = "";
+            GusWrdTeReoRtb3.Font = new Font("Segoe UI", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            GusWrdTeReoRtb3.Location = new Point(266, 102);
+            GusWrdTeReoRtb3.Name = "GusWrdTeReoRtb3";
+            GusWrdTeReoRtb3.ReadOnly = true;
+            GusWrdTeReoRtb3.Size = new Size(100, 71);
+            GusWrdTeReoRtb3.TabIndex = 82;
+            GusWrdTeReoRtb3.Text = "";
             // 
-            // richTextBox6
+            // GusWrdTeReoRtb4
             // 
-            richTextBox6.Location = new Point(383, 102);
-            richTextBox6.Name = "richTextBox6";
-            richTextBox6.Size = new Size(100, 71);
-            richTextBox6.TabIndex = 81;
-            richTextBox6.Text = "";
+            GusWrdTeReoRtb4.Font = new Font("Segoe UI", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            GusWrdTeReoRtb4.Location = new Point(383, 102);
+            GusWrdTeReoRtb4.Name = "GusWrdTeReoRtb4";
+            GusWrdTeReoRtb4.ReadOnly = true;
+            GusWrdTeReoRtb4.Size = new Size(100, 71);
+            GusWrdTeReoRtb4.TabIndex = 81;
+            GusWrdTeReoRtb4.Text = "";
             // 
-            // richTextBox5
+            // GusWrdTeReoRtb5
             // 
-            richTextBox5.Location = new Point(499, 102);
-            richTextBox5.Name = "richTextBox5";
-            richTextBox5.Size = new Size(100, 71);
-            richTextBox5.TabIndex = 80;
-            richTextBox5.Text = "";
+            GusWrdTeReoRtb5.Font = new Font("Segoe UI", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            GusWrdTeReoRtb5.Location = new Point(499, 102);
+            GusWrdTeReoRtb5.Name = "GusWrdTeReoRtb5";
+            GusWrdTeReoRtb5.ReadOnly = true;
+            GusWrdTeReoRtb5.Size = new Size(100, 71);
+            GusWrdTeReoRtb5.TabIndex = 80;
+            GusWrdTeReoRtb5.Text = "";
             // 
-            // richTextBox4
+            // GusWrdTeReoRtb6
             // 
-            richTextBox4.Location = new Point(623, 102);
-            richTextBox4.Name = "richTextBox4";
-            richTextBox4.Size = new Size(100, 71);
-            richTextBox4.TabIndex = 79;
-            richTextBox4.Text = "";
+            GusWrdTeReoRtb6.Font = new Font("Segoe UI", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            GusWrdTeReoRtb6.Location = new Point(623, 102);
+            GusWrdTeReoRtb6.Name = "GusWrdTeReoRtb6";
+            GusWrdTeReoRtb6.ReadOnly = true;
+            GusWrdTeReoRtb6.Size = new Size(100, 71);
+            GusWrdTeReoRtb6.TabIndex = 79;
+            GusWrdTeReoRtb6.Text = "";
+            GusWrdTeReoRtb6.Click += TeReoBtn;
             // 
-            // richTextBox3
+            // GusWrdTeReoRtb7
             // 
-            richTextBox3.Location = new Point(752, 102);
-            richTextBox3.Name = "richTextBox3";
-            richTextBox3.Size = new Size(100, 71);
-            richTextBox3.TabIndex = 78;
-            richTextBox3.Text = "";
+            GusWrdTeReoRtb7.Font = new Font("Segoe UI", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            GusWrdTeReoRtb7.Location = new Point(752, 102);
+            GusWrdTeReoRtb7.Name = "GusWrdTeReoRtb7";
+            GusWrdTeReoRtb7.ReadOnly = true;
+            GusWrdTeReoRtb7.Size = new Size(100, 71);
+            GusWrdTeReoRtb7.TabIndex = 78;
+            GusWrdTeReoRtb7.Text = "";
             // 
-            // richTextBox2
+            // GusWrdTeReoRtb8
             // 
-            richTextBox2.Location = new Point(884, 102);
-            richTextBox2.Name = "richTextBox2";
-            richTextBox2.Size = new Size(100, 71);
-            richTextBox2.TabIndex = 77;
-            richTextBox2.Text = "";
+            GusWrdTeReoRtb8.Font = new Font("Segoe UI", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            GusWrdTeReoRtb8.Location = new Point(884, 102);
+            GusWrdTeReoRtb8.Name = "GusWrdTeReoRtb8";
+            GusWrdTeReoRtb8.ReadOnly = true;
+            GusWrdTeReoRtb8.Size = new Size(100, 71);
+            GusWrdTeReoRtb8.TabIndex = 77;
+            GusWrdTeReoRtb8.Text = "";
             // 
-            // richTextBox1
+            // GusWrdTeReoRtb1
             // 
-            richTextBox1.Location = new Point(22, 102);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(100, 71);
-            richTextBox1.TabIndex = 76;
-            richTextBox1.Text = "";
+            GusWrdTeReoRtb1.Font = new Font("Segoe UI", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            GusWrdTeReoRtb1.Location = new Point(22, 102);
+            GusWrdTeReoRtb1.Name = "GusWrdTeReoRtb1";
+            GusWrdTeReoRtb1.ReadOnly = true;
+            GusWrdTeReoRtb1.Size = new Size(100, 71);
+            GusWrdTeReoRtb1.TabIndex = 76;
+            GusWrdTeReoRtb1.Text = "";
             // 
             // richTextBox9
             // 
             richTextBox9.Location = new Point(4, 97);
             richTextBox9.Name = "richTextBox9";
+            richTextBox9.ReadOnly = true;
             richTextBox9.Size = new Size(1011, 91);
             richTextBox9.TabIndex = 75;
             richTextBox9.Text = "";
@@ -458,14 +542,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(237, 153, 45);
             ClientSize = new Size(1262, 953);
-            Controls.Add(richTextBox8);
-            Controls.Add(richTextBox7);
-            Controls.Add(richTextBox6);
-            Controls.Add(richTextBox5);
-            Controls.Add(richTextBox4);
-            Controls.Add(richTextBox3);
-            Controls.Add(richTextBox2);
-            Controls.Add(richTextBox1);
+            Controls.Add(GusWrdTeReoRtb2);
+            Controls.Add(GusWrdTeReoRtb3);
+            Controls.Add(GusWrdTeReoRtb4);
+            Controls.Add(GusWrdTeReoRtb5);
+            Controls.Add(GusWrdTeReoRtb6);
+            Controls.Add(GusWrdTeReoRtb7);
+            Controls.Add(GusWrdTeReoRtb8);
+            Controls.Add(GusWrdTeReoRtb1);
             Controls.Add(richTextBox9);
             Controls.Add(pictureBox1);
             Controls.Add(GamSunPic);
@@ -500,7 +584,6 @@
             Controls.Add(PicLossScreen);
             Name = "MmtrGameScreenMaori";
             Text = "MmtrGameScreenMaori";
-            Load += Form3_Load;
             ((System.ComponentModel.ISupportInitialize)PicLossScreen).EndInit();
             ((System.ComponentModel.ISupportInitialize)GmeScrPic).EndInit();
             ((System.ComponentModel.ISupportInitialize)GamSunPic).EndInit();
@@ -542,14 +625,14 @@
         private PictureBox GmeScrPic;
         private PictureBox GamSunPic;
         private PictureBox pictureBox1;
-        private RichTextBox richTextBox8;
-        private RichTextBox richTextBox7;
-        private RichTextBox richTextBox6;
-        private RichTextBox richTextBox5;
-        private RichTextBox richTextBox4;
-        private RichTextBox richTextBox3;
-        private RichTextBox richTextBox2;
-        private RichTextBox richTextBox1;
+        private RichTextBox GusWrdTeReoRtb2;
+        private RichTextBox GusWrdTeReoRtb3;
+        private RichTextBox GusWrdTeReoRtb4;
+        private RichTextBox GusWrdTeReoRtb5;
+        private RichTextBox GusWrdTeReoRtb6;
+        private RichTextBox GusWrdTeReoRtb7;
+        private RichTextBox GusWrdTeReoRtb8;
+        private RichTextBox GusWrdTeReoRtb1;
         private RichTextBox richTextBox9;
     }
 }
