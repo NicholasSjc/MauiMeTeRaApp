@@ -95,6 +95,7 @@
             // 
             // MistkBox
             // 
+            MistkBox.Font = new Font("Segoe UI", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             MistkBox.Location = new Point(1014, 198);
             MistkBox.Margin = new Padding(20);
             MistkBox.Name = "MistkBox";

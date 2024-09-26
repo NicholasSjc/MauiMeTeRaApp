@@ -124,7 +124,7 @@ namespace MauiMeTeRaApp
 
         List<string> TeReoWords = new List<string>()
         {
-            "hui", "marae", "waiata", "haka", "tane", "tamariki", "wahine", "whānau", "waka", "koha", "kaumātua", "tēnā koe", "kakī", "hapū", "Tapu"
+            "hui", "marae", "waiata", "haka", "tane", "tamariki", "wahine", "whānau", "waka", "koha", "kaumātua", "tēnā koe", "kakī", "hapū", "tapu"
 
         };
 
@@ -269,6 +269,7 @@ namespace MauiMeTeRaApp
 
                 clickedButton.BackColor = Color.Red;
 
+                MistkBox.AppendText($"{clickedButton.Text}");
             }
 
             clickedButton.Enabled = false;
